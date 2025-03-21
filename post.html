@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+
+        <style>
+            /* .post { font-family: Arial, sans-serif; margin: 20px; }
+            #post-list { max-width: 600px; margin: auto; }
+            .post-item { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+            .post-item:hover { background: #f4f4f4; }
+            .write-button { display: block; width: 100%; padding: 10px; text-align: center; background: blue; color: white; text-decoration: none; margin-top: 20px; } */
+            .post { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+            table { width: 90%; margin: auto; border-collapse: collapse; }
+            th, td { padding: 15px; border: 1px solid #ccc; text-align: center; }
+            th { background: #f4f4f4; }
+            .write-button { display: block; width: 200px; margin: 20px auto; padding: 10px; background: blue; color: white; text-align: center; text-decoration: none; }
+            .write-button:hover { background: darkblue; }
+            .title-link { color: blue; text-decoration: none; }
+            .title-link:hover { text-decoration: underline; }
+            .delete-btn { background: lightcoral; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+            .delete-btn:hover { background: darkred; }
+        </style>
+    </head>
+    <body id="post">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html" style="color: white">행복한학교재단</a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <!-- 소개마당 드롭다운 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html" id="aboutDropdown" role="button" aria-expanded="false">소개마당</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about.html">인사말</a></li>
+                                <li><a class="dropdown-item" href="about.html">비전과미션</a></li>
+                                <li><a class="dropdown-item" href="about.html">조직도</a></li>
+                                <li><a class="dropdown-item" href="about.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <!-- 참여마당 드롭다운 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html" id="postDropdown" role="button" aria-expanded="false">참여마당</a>
+                            <ul class="dropdown-menu" aria-labelledby="postDropdown">
+                                <li><a class="dropdown-item" href="post.html">공지사항</a></li>
+                                <li><a class="dropdown-item" href="post.html">강사신청</a></li>
+                            </ul>
+                        </li>
+                        <!-- 후원마당 드롭다운 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 py-3 py-lg-4" href="donateFAQ.html" id="donateDropdown" role="button" aria-expanded="false">후원마당</a>
+                            <ul class="dropdown-menu" aria-labelledby="donateDropdown">
+                                <li><a class="dropdown-item" href="donateFAQ.html">후원 안내</a></li>
+                                <li><a class="dropdown-item" href="donateFAQ.html">후원 신청</a></li>
+                                <li><a class="dropdown-item" href="donateFAQ.html">후원 사용안내</a></li>
+                            </ul>
+                        </li>
+                        <!-- SIAT 육성/채용 드롭다운 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html" id="contactDropdown" role="button" aria-expanded="false">SIAT 육성/채용</a>
+                            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                                <li><a class="dropdown-item" href="contact.html">[구직]취업 직무교육 신청</a></li>
+                                <li><a class="dropdown-item" href="contact.html">[구인]기업연합 장애인 채용</a></li>
+                                <li><a class="dropdown-item" href="contact.html">씨앗게시판</a></li>
+                            </ul>
+                        </li>
+                        <!-- 로그인 드롭다운 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 py-3 py-lg-4" href="login.html" id="loginDropdown" role="button" aria-expanded="false">로그인</a>
+                            <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                                <li><a class="dropdown-item" href="login.html">로그인</a></li>
+                                <li><a class="dropdown-item" href="login.html">회원가입</a></li>
+                                <li><a class="dropdown-item" href="login.html">아이디 찾기</a></li>
+                                <li><a class="dropdown-item" href="login.html">비밀번호 찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <!-- <h1>Man must explore, and this is exploration at its greatest</h1>
+                            <h2 class="subheading">Problems look mighty small from 150 miles up</h2> -->
+                            <!-- <span class="meta">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on August 24, 2023
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <!-- 왼쪽 상세 내용 -->
+                    <div class="col-md-3 col-lg-3 d-none d-md-block">
+                        <div class="category-box p-4 border rounded bg-light">
+                            <h4 class="fw-bold">참여마당</h4>
+                            <!-- <p>이 과정은 청년 장애인을 위한 맞춤형 직무교육을 제공합니다. 채용 연계 가능성이 높은 프로그램입니다.</p> -->
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="http://www.happy-school.org/v/sub4_1.html">공지사항</a></li>
+                                <li class="list-group-item"><a href="http://www.happy-school.org/v/sub4_1.html">강사신청</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9 col-xl-9">
+                        <h2 style="text-align: center; margin-bottom: 20px;">게시판</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th style="width: 400px;">글제목</th>
+                                    <th style="width: 100px;">이름</th>
+                                    <th>작성일</th>
+                                    <th>조회</th>
+                                    <th>파일</th>
+                                    <th style="width: 200px;">관리</th>
+                                </tr>
+                            </thead>
+                            <tbody id="post-list"></tbody>
+                        </table>
+                        <a href="write2.html" class="write-button" style="width: 500px; margin-top: 40px;">게시글 작성</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+</html>

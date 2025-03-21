@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        .contactId { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h2, h3 { color: navy; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+
+        .download-btn { 
+            display: inline-block; 
+            padding: 10px 15px; 
+            background: white; 
+            color: black; 
+            text-decoration: none; 
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        </style>
+    </head>
+    <body id="contactId">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html" style="color: white">행복한학교재단</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                    <!-- 소개마당 드롭다운 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html" id="aboutDropdown" role="button" aria-expanded="false">소개마당</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">인사말</a></li>
+                            <li><a class="dropdown-item" href="about.html">비전과미션</a></li>
+                            <li><a class="dropdown-item" href="about.html">조직도</a></li>
+                            <li><a class="dropdown-item" href="about.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <!-- 참여마당 드롭다운 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html" id="postDropdown" role="button" aria-expanded="false">참여마당</a>
+                        <ul class="dropdown-menu" aria-labelledby="postDropdown">
+                            <li><a class="dropdown-item" href="post.html">공지사항</a></li>
+                            <li><a class="dropdown-item" href="post.html">강사신청</a></li>
+                        </ul>
+                    </li>
+                    <!-- 후원마당 드롭다운 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="donateFAQ.html" id="donateDropdown" role="button" aria-expanded="false">후원마당</a>
+                        <ul class="dropdown-menu" aria-labelledby="donateDropdown">
+                            <li><a class="dropdown-item" href="donateFAQ.html">후원 안내</a></li>
+                            <li><a class="dropdown-item" href="donateFAQ.html">후원 신청</a></li>
+                            <li><a class="dropdown-item" href="donateFAQ.html">후원 사용안내</a></li>
+                        </ul>
+                    </li>
+                    <!-- SIAT 육성/채용 드롭다운 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html" id="contactDropdown" role="button" aria-expanded="false">SIAT 육성/채용</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="contact.html">[구직]취업 직무교육 신청</a></li>
+                            <li><a class="dropdown-item" href="contact.html">[구인]기업연합 장애인 채용</a></li>
+                            <li><a class="dropdown-item" href="contact.html">씨앗게시판</a></li>
+                        </ul>
+                    </li>
+                    <!-- 로그인 드롭다운 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="login.html" id="loginDropdown" role="button" aria-expanded="false">로그인</a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><a class="dropdown-item" href="login.html">로그인</a></li>
+                            <li><a class="dropdown-item" href="login.html">회원가입</a></li>
+                            <li><a class="dropdown-item" href="login.html">아이디 찾기</a></li>
+                            <li><a class="dropdown-item" href="login.html">비밀번호 찾기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/coding.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>SIAT 육성/채용</h1>
+                            <span class="subheading">취업 직무교육 신청 안내</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <!-- 왼쪽 상세 내용 -->
+                <div class="col-md-3 col-lg-3 d-none d-md-block">
+                    <div class="category-box p-3 border rounded bg-light">
+                        <h4 class="fw-bold">SIAT(씨앗)</h4>
+                        <!-- <p>이 과정은 청년 장애인을 위한 맞춤형 직무교육을 제공합니다. 채용 연계 가능성이 높은 프로그램입니다.</p> -->
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="http://www.happy-school.org/v/summit_1.html">[구직] 취업 직무교육 신청</a></li>
+                            <li class="list-group-item"><a href="http://www.happy-school.org/v/summit_2.html">[구인] 기업연합 장애인채용</a></li>
+                            <li class="list-group-item"><a href="http://www.happy-school.org/v/summit_3.html">씨앗 게시판</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-9 d-none d-md-block">
+                    <img src="./assets/img/siat_poster.png" style="width: 800px; height: 1000px;">
+                    <div>
+                        <br/>
+                        <h2>2025년 기업채용연계형 청년장애인 씨앗 훈련생 모집</h2>
+                        <h3>모집분야: SW개발, 제조테스트</h3>
+                        
+                        <p>
+                            한국장애인고용공단(<a href="http://www.kead.or.kr">www.kead.or.kr</a>)은 대한민국 청년장애인의 일자리 창출을 위해
+                            SK(주) C&C 등 16개 기업과 함께 IT직무 맞춤훈련을 실시하며, 채용까지 연계하는 SIAT(Smart IT Advanced Training) 과정을 운영합니다.
+                        </p>
+                        
+                        <h3>훈련 개요</h3>
+                        <table>
+                            <tr>
+                                <th>채용기업</th>
+                                <td>총 16개사 (구글코리아, ㈜두산, 메가존클라우드 등)</td>
+                            </tr>
+                            <tr>
+                                <th>고용형태</th>
+                                <td>계약직 후 정규직 전환 (기업별 상이)</td>
+                            </tr>
+                            <tr>
+                                <th>훈련장소</th>
+                                <td>서울맞춤훈련센터</td>
+                            </tr>
+                            <tr>
+                                <th>훈련기간</th>
+                                <td>SW개발: 2025.01.13 ~ 07.18, 제조테스트: 2025.01.13 ~ 03.28</td>
+                            </tr>
+                            <tr>
+                                <th>훈련내용</th>
+                                <td>Python, Java, Linux, AWS Cloud 등</td>
+                            </tr>
+                            <tr>
+                                <th>훈련시간</th>
+                                <td>평일 9:00 ~ 17:00 (1일 7시간)</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <h3>지원 자격</h3>
+                        <ul>
+                            <li>장애인복지법에 의한 등록장애인 또는 국가유공자</li>
+                            <li>청년장애인 (만 19세 이상 34세 이하)</li>
+                            <li>전공무관 (IT전공자 우대)</li>
+                            <li>대학 졸업(예정)이상, 제조테스트는 고등학교 졸업</li>
+                        </ul>
+                        <br/>
+                        <h3>지원 혜택</h3>
+                        <ul>
+                            <li>훈련비용 전액 무료, 교재 지급</li>
+                            <li>훈련참여 수당 및 교통비 월 최대 25만 원</li>
+                            <li>중식 제공 및 상해보험 가입</li>
+                            <li>입학 및 수료 선물 지급, 모범 훈련생 포상</li>
+                        </ul>
+                        <br/>
+                        <h3>훈련생 선발 일정</h3>
+                        <table>
+                            <tr>
+                                <th>모집기간</th>
+                                <td>2024.11.13 ~ 2024.12.12 (24:00까지)</td>
+                            </tr>
+                            <tr>
+                                <th>서류 발표</th>
+                                <td>2024.12.13 (개별 통보)</td>
+                            </tr>
+                            <tr>
+                                <th>면접 일정</th>
+                                <td>2024.12.16 ~ 2024.12.17</td>
+                            </tr>
+                            <tr>
+                                <th>면접 장소</th>
+                                <td>서울맞춤훈련센터 (충무로역 5번출구 100M 우측, 남산스퀘어빌딩 11층)</td>
+                            </tr>
+                            <tr>
+                                <th>최종 결과</th>
+                                <td>2024.12.18 (개별 통보)</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <h3>제출 서류 및 지원 방법</h3>
+                        <ul>
+                            <li>훈련지원서 1부 (자기소개서, 개인정보동의서 포함)</li>
+                            <li>이메일 접수: <a href="mailto:chunxpd@kead.or.kr">chunxpd@kead.or.kr</a></li>
+                            <li>메일 제목 예시: 제조테스트_홍길동 or SW개발_홍길동</li>
+                        </ul>
+                        <br/>
+                        <h3>문의 사항</h3>
+                        <p>
+                            한국장애인고용공단 서울맞춤훈련센터<br>
+                            ☎ 02-2262-0941<br>
+                            이메일: <a href="mailto:chunxpd@kead.or.kr">chunxpd@kead.or.kr</a>
+                        </p>
+                        <a href="./assets/pdf/2025년 기업채용연계형 청년장애인 씨앗 훈련생 모집공고-서울맞춤훈련센터.pdf" class="download-btn"> 2025년 기업채용연계형 청년장애인 씨앗 훈련생 모집공고-서울맞춤훈련센터.pdf </a>
+                        <a href="./assets/pdf/2025년 씨앗 커리큘럼.pdf" class="download-btn"> 씨앗 커리큘럼 안내.pdf </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+        
+        
+    
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+    </body>
+</html>
